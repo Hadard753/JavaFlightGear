@@ -9,7 +9,7 @@ import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 
-import algorithm.BFS;
+import algorithm.BestFirstSearch;
 import algorithm.Searchable;
 import algorithm.State;
 import matrix.Matrix;
@@ -21,7 +21,7 @@ public class MyClientHandler implements ClientHandler {
 	CacheManager<String, String> cm;
 
 	public MyClientHandler() {
-		solver = new SolverSearcher(new BFS<String>());
+		solver = new SolverSearcher(new BestFirstSearch<String>());
 		cm = new FileCacheManager<>();
 	}
 
