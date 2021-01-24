@@ -1,0 +1,20 @@
+<PropertyList>
+	<generic>
+		<output>
+			<line_separator>newline</line_separator>
+			<var_separator>,</var_separator>
+				<chunk>
+					<name>indicated-altitude-ft</name>
+					<type>float</type>
+					<format>%f</format>
+					<node>/instrumentation/gps/indicated-altitude-ft</node>
+				</chunk>
+				<chunk>
+					<name>indicated-longitude-deg</name>
+					<type>float</type>
+					<format>%f</format>
+					<node>/instrumentation/gps/indicated-longitude-deg</node>
+				</chunk>
+		</output>
+	</generic>
+</PropertyList>
